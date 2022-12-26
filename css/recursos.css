@@ -1,0 +1,87 @@
+.pensativo{
+  background-color: #ffc107;
+}
+
+.pensativo h1{
+  color: #0D0C0C !important;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 100px 400px 40px 400px;
+}
+
+.pensativo p{
+  color: #211E17;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 270px 136px 270px;
+}
+
+#recursos .funcionalidades{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.economize, .suporte, .facil{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-top: 140px;
+}
+
+.economize p, .suporte p, .facil p{
+  max-width: 25ch;
+}
+
+.facil-img{
+  width: 556px;
+  height: 375px;
+}
+
+@media (max-width: 1115px){
+  .pensativo h1{
+    max-width: 700px;
+    padding: 100px 0 20px 0;
+    margin: auto;
+  }
+  .pensativo p{
+    padding: 0 0 136px 0;
+    max-width: 700px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px){
+  .pensativo h1{
+    font-size: 3rem;
+    max-width: 500px;
+  }
+  .pensativo p{
+    font-size: 1.4rem;
+    max-width: 500px;
+  }
+  .economize, .suporte, .facil{
+    grid-template-columns: 1fr;
+  }
+  .facil-img{
+    order: 1;
+  }
+  .facil p{
+    order: 0;
+  }
+  .economize p{
+    padding: 0 0 0 30px;
+  }
+}
+
+@media (max-width: 520px){
+  .pensativo h1, .pensativo p{
+    max-width: 320px;
+  }
+  .facil-img{
+    width: 347.5px;
+    height: 234.3px;
+  }
+}
+

@@ -1,0 +1,33 @@
+.sucesso{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(5, 5, 5);
+}
+
+h1{
+  position: relative;
+  font-size: 3em;
+  color: #3F3822;
+}
+h1::before{
+  content: attr(data-text);
+  position: absolute;
+  color: #ffc107;
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid #ffc107;
+  animation: animate 8s linear infinite;
+  filter: drop-shadow(0 0 20px #775a00)drop-shadow(0 0 50px #765800);
+}
+
+@keyframes animate{
+  0%, 10%, 100%{
+    width: 0;
+  }
+  70%, 90%{
+    width: 100%;
+  }
+}

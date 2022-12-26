@@ -1,0 +1,172 @@
+.planos-bg{
+  padding-top: 136px;
+  background-color: #0b0b0b;
+}
+
+.planos p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #c7c7c7;
+}
+
+.planos h1{
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  line-height: 26px;
+}
+
+.planos-card{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 32px 32px 32px 60px;
+  gap: 136px;
+}
+
+.pessoal, .empresarial{
+  background-color: #000;
+  border-radius: 4px;
+  padding-bottom: 76px;
+  align-self: flex-end;
+}
+
+.preco{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 90px 60px 90px 0;
+  text-align: center;
+}
+
+.pessoal h3, .empresarial h3{
+  color: #E39A08;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-column: 1;
+}
+
+.pessoal h2, .empresarial h2{
+  font-size: 3rem;
+  font-weight: 600;
+  width: 140px;
+  color: white;
+}
+
+.planos-card ul{
+  margin-top: 80xp;
+}
+
+.planos-card li{
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 2.2rem;
+  position: relative;
+}
+
+.planos-card ul li::before{
+  display: inline-block;
+  content: '';
+  width: 12px;
+  height: 2px;
+  background-color: #ffc107;
+  position: absolute;
+  left: -22px;
+  top: 10px;
+	box-shadow: 0 0 5px #ffc107, 0 0 20px #ffc107, 0 0 60px #ffc107;
+}
+
+.planos h3, .planos li, .planos .f-button{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.planos .f-button{
+  margin-top: 50px;
+}
+
+/* PERGUNTAS */
+
+.perguntas-bg{
+  background-color: white;
+  color: black;
+  padding-bottom: 140px;
+  padding-top: 100px;
+
+}
+
+.perguntas h1{
+  font-size: 4rem;
+  font-weight: 600;
+  color: #E39A08 !important;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.pergunta{
+  background-color: #fafafa;
+  border: 1px solid #a6a6a6;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 41px 36px;
+}
+
+.pergunta:hover{
+  background-color: #ffebb0;
+	box-shadow: 0 0 5px #ffc107, 0 0 20px #ffc107;
+}
+
+.pergunta dt{
+  font-size: 1.5rem;
+  color: #7E5400;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.pergunta dd{
+  color: #7E5400;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1300px){
+  .planos-card{
+    grid-template-columns: 1fr;
+  }
+  .f-button{
+    display: grid;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 700px){
+  .planos h1{
+    font-size: 2rem;
+  }
+  .planos p{
+    font-size: 1rem;
+  }
+  .planos-card{
+    padding: 0;
+  }
+  .pessoal h2, .empresarial h2{
+    font-size: 2.5rem;
+  }
+  .pessoal h3, .empresarial h3{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px){
+  .preco{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .pergunta dt{
+    font-size: 1.2rem;
+  }
+  .pergunta dd{
+    font-size: 0.9rem;
+  }
+}
